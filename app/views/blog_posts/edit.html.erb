@@ -1,0 +1,6 @@
+<h1>hello world!</h1>
+
+<%= render partial: "form", locals: {blog_post: @blog_post} %>
+<div class="border border-1 border-black w-fit">
+  <%= button_to "Delete", @blog_post, method: :delete, data: {turbo_confirm: "Are you sure?"} %>
+</div>
