@@ -1,3 +1,5 @@
+<%= link_to "Edit", edit_blog_post_path(@blog_post) if user_signed_in? %>
+<h1><%= link_to "My_blog", "/" %></h1>
 <%= @blog_post.title %>
 <img src="<%= @blog_post.img %>">
 <%= @blog_post.body %>
